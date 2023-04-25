@@ -1,0 +1,18 @@
+[submodule "external/thead-yocto/documents"]
+	path = external/thead-yocto/documents
+	url = https://gitee.com/thead-yocto/documents
+[submodule "external/thead-yocto/xuantie-yocto"]
+	path = external/thead-yocto/xuantie-yocto
+	url = https://gitee.com/thead-yocto/xuantie-yocto
+[submodule "external/revyos/thead-kernel"]
+	path = external/revyos/thead-kernel
+	url = https://github.com/revyos/thead-kernel.git
+[submodule "external/revyos/thead-u-boot"]
+	path = external/revyos/thead-u-boot
+	url = https://github.com/revyos/thead-u-boot.git
+[submodule "external/revyos/thead-opensbi"]
+	path = external/revyos/thead-opensbi
+	url = https://github.com/revyos/thead-opensbi.git
+[submodule "external/thead-yocto/light_deploy_images"]
+	path = external/thead-yocto/light_deploy_images
+	url = https://gitee.com/thead-yocto/light_deploy_images

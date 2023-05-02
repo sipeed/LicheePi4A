@@ -1,0 +1,19 @@
+FROM initdc/xuantie-900:22.04-v2.6.1-linux
+
+RUN set -e \
+    # && sed -i 's/archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list \
+    && apt-get update
+
+# https://github.com/initdc/cross-make/blob/master/Dockerfile.uboot
+# https://u-boot.readthedocs.io/en/latest/build/gcc.html
+RUN set -e \
+    && apt-get install --no-install-recommends -y \
+    bc bison build-essential \
+    device-tree-compiler dfu-util efitools flex gdisk graphviz imagemagick \
+    liblz4-tool libgnutls28-dev libguestfs-tools libncurses-dev \
+    libpython3-dev libsdl2-dev libssl-dev lz4 lzma lzma-alone openssl \
+    pkg-config python3 python3-asteval python3-coverage python3-filelock \
+    python3-pkg-resources python3-pycryptodome python3-pyelftools \
+    python3-pytest python3-pytest-xdist python3-sphinxcontrib.apidoc \
+    python3-sphinx-rtd-theme python3-subunit python3-testtools \
+    python3-virtualenv swig uuid-dev
